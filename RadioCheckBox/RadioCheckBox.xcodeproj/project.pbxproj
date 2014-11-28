@@ -13,6 +13,9 @@
 		0CAB65901A286FC00044C68C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB658F1A286FC00044C68C /* Images.xcassets */; };
 		0CAB65931A286FC00044C68C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB65911A286FC00044C68C /* LaunchScreen.xib */; };
 		0CAB659F1A286FC00044C68C /* RadioCheckBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB659E1A286FC00044C68C /* RadioCheckBoxTests.m */; };
+		0CAB65AE1A2871740044C68C /* GZFRadioCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB65AA1A2871740044C68C /* GZFRadioCheckBox.m */; };
+		0CAB65AF1A2871740044C68C /* RadioButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB65AC1A2871740044C68C /* RadioButton-Selected.png */; };
+		0CAB65B01A2871740044C68C /* RadioButton-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB65AD1A2871740044C68C /* RadioButton-Unselected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 		0CAB65981A286FC00044C68C /* RadioCheckBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioCheckBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAB659D1A286FC00044C68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAB659E1A286FC00044C68C /* RadioCheckBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioCheckBoxTests.m; sourceTree = "<group>"; };
+		0CAB65A91A2871740044C68C /* GZFRadioCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZFRadioCheckBox.h; sourceTree = "<group>"; };
+		0CAB65AA1A2871740044C68C /* GZFRadioCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZFRadioCheckBox.m; sourceTree = "<group>"; };
+		0CAB65AC1A2871740044C68C /* RadioButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Selected.png"; sourceTree = "<group>"; };
+		0CAB65AD1A2871740044C68C /* RadioButton-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Unselected.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 		0CAB65811A286FC00044C68C /* RadioCheckBox */ = {
 			isa = PBXGroup;
 			children = (
+				0CAB65A81A2871740044C68C /* 单选按钮(RadioCheckBox) */,
 				0CAB65861A286FC00044C68C /* AppDelegate.h */,
 				0CAB65871A286FC00044C68C /* AppDelegate.m */,
 				0CAB65891A286FC00044C68C /* ViewController.h */,
@@ -114,6 +122,25 @@
 				0CAB659D1A286FC00044C68C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CAB65A81A2871740044C68C /* 单选按钮(RadioCheckBox) */ = {
+			isa = PBXGroup;
+			children = (
+				0CAB65A91A2871740044C68C /* GZFRadioCheckBox.h */,
+				0CAB65AA1A2871740044C68C /* GZFRadioCheckBox.m */,
+				0CAB65AB1A2871740044C68C /* img */,
+			);
+			path = "单选按钮(RadioCheckBox)";
+			sourceTree = "<group>";
+		};
+		0CAB65AB1A2871740044C68C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0CAB65AC1A2871740044C68C /* RadioButton-Selected.png */,
+				0CAB65AD1A2871740044C68C /* RadioButton-Unselected.png */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAB65AF1A2871740044C68C /* RadioButton-Selected.png in Resources */,
+				0CAB65B01A2871740044C68C /* RadioButton-Unselected.png in Resources */,
 				0CAB65931A286FC00044C68C /* LaunchScreen.xib in Resources */,
 				0CAB65901A286FC00044C68C /* Images.xcassets in Resources */,
 			);
@@ -217,6 +246,7 @@
 			files = (
 				0CAB658B1A286FC00044C68C /* ViewController.m in Sources */,
 				0CAB65881A286FC00044C68C /* AppDelegate.m in Sources */,
+				0CAB65AE1A2871740044C68C /* GZFRadioCheckBox.m in Sources */,
 				0CAB65851A286FC00044C68C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

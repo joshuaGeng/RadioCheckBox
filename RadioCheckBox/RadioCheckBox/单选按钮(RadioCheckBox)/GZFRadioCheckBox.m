@@ -8,13 +8,10 @@
 
 #import "GZFRadioCheckBox.h"
 
-//static const NSUInteger kRadioButtonWidth=22;
-//static const NSUInteger kRadioButtonHeight=22;
 
 // radio button 的宽高
 #define kRadioButtonWidth 22
 #define kRadioButtonHeight 22
-
 
 @implementation GZFRadioCheckBox
 
@@ -23,6 +20,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
+        
         self.index = 0;
         self.isHorizontal = YES;
         self.spacing = 10;
